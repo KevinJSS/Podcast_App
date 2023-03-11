@@ -1,0 +1,53 @@
+@use 'variables' as v; 
+@use 'mixins' as m; 
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, 
+*:before, 
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+  
+body {
+    font-family: v.$primary-font-family;
+    font-size: 1.6rem;
+}
+p {
+    color: v.$dark-color;
+    font-size: 2rem;
+    line-height: 2;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+h1,
+h2,
+h3 {
+    margin: 0 0 2rem  0 ;
+}
+h1 {
+    font-size: 4rem;
+}
+h3 {
+    font-size: 2.8rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+ul {
+    padding: 0;
+    list-style: none;
+}
+.container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
