@@ -1,0 +1,56 @@
+@use 'base/variables' as v; 
+@use 'base/mixins' as m;
+
+/* HEADER SECTION */
+.header {
+    @include m.bgImage('../images/header.jpg', v.$secondary-opacity);
+
+    &__logo {
+        max-width: 20rem;
+        padding: 5rem 0;
+        margin: 0 auto;
+
+        @include m.tablet {
+            margin: 0;
+        }
+    }
+
+    &__content {
+        padding: 13rem 0 7rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include m.tablet {
+            align-items: flex-start;
+        }
+
+        @include m.desktop {
+            padding: 13.2% 0;
+        }
+    }
+
+    &__heading {
+        color: v.$light-color;
+        font-size: 4.5rem;
+        text-align: center;
+
+        @include m.tablet {
+            text-align: left;
+            font-size: 5rem;
+            max-width: 50%;
+        }
+
+        @include m.desktop {
+            font-size: 6rem;
+            max-width: 40%;
+        }
+    }
+
+    &__button {
+        margin-top: 1rem;
+        @include m.button(v.$primary-color, v.$light-color);
+        font-size: 2.5rem;
+    }
+}
