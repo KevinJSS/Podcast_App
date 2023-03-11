@@ -1,0 +1,61 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.benefits {
+    @include m.bgImage('', v.$primary-color);
+    padding: 5rem 0;
+
+    @include m.tablet {
+        padding: 6rem 0;
+    }
+
+    &__grid {
+        @include m.tablet {
+            @include m.grid(5, 3rem);
+            align-items: center;
+        }
+    }
+
+    &__content {
+        grid-column: 1 / 4;
+    }
+
+    &__heading {
+        margin-bottom: 3rem;
+
+        @include m.tablet {
+            margin: 5rem 0 3rem;
+        }
+
+        color: v.$secondary-color;
+        display: inline-block;
+        font-size: 3.6rem;
+
+        @include m.underline(v.$light-color);
+    }
+
+    &__illustration {
+        width: 90%;
+        margin: 4rem auto 0;
+        
+        @include m.tablet {
+            grid-column: 4 / 6;
+            width: auto;
+            margin: 0;
+        }
+
+        transition: all .3s ease-in-out;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.1) rotate(5deg);
+            -webkit-transform: scale(1.1) rotate(5deg);
+            -moz-transform: scale(1.1) rotate(5deg);
+            -ms-transform: scale(1.1) rotate(5deg);
+            -o-transform: scale(1.1) rotate(5deg);
+        }
+    }
+}
