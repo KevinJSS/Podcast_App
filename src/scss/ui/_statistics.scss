@@ -1,0 +1,29 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.statistics {
+    padding: 5rem 0;
+
+    @include m.desktop {
+        padding: 8rem 0;
+    }
+
+    &__heading {
+        margin-bottom: 3rem;
+
+        @include m.tablet {
+            margin: 5rem 0 3rem;
+        }
+
+        color: v.$secondary-color;
+        display: inline-block;
+        font-size: 3.6rem;
+
+        @include m.underline(v.$primary-color);
+    }
+
+    &__img {
+        margin-top: 3rem;
+        box-shadow: 0px 8px 15px rgba(v.$secondary-opacity, .5);
+    }
+}
