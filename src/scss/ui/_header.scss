@@ -4,8 +4,16 @@
 /* HEADER SECTION */
 .header {
     @include m.bgImage('../images/header.jpg', v.$secondary-opacity);
+    height: 100vh;
 
-    &__logo {
+    &__flex {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__img {
         max-width: 20rem;
         padding: 5rem 0;
         margin: 0 auto;
@@ -16,18 +24,14 @@
     }
 
     &__content {
-        padding: 13rem 0 7rem;
-
+        padding-bottom: 10rem;
         display: flex;
         flex-direction: column;
         align-items: center;
 
         @include m.tablet {
             align-items: flex-start;
-        }
-
-        @include m.desktop {
-            padding: 15rem 0;
+            padding-bottom: 13rem;
         }
     }
 
@@ -39,12 +43,12 @@
         @include m.tablet {
             text-align: left;
             font-size: 5rem;
-            max-width: 50%;
+            max-width: 55%;
         }
 
         @include m.desktop {
-            font-size: 6rem;
-            max-width: 40%;
+            font-size: 6.5rem;
+            width: 50%;
         }
     }
 
