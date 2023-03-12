@@ -35,7 +35,16 @@ h3 {
     margin: 0 0 2rem  0 ;
 }
 h1 {
-    font-size: 4rem;
+    font-size: 3rem;
+}
+h2 {
+    font-size: 3rem;
+    display: inline-block;
+    margin: 5rem 0 3rem;
+
+    @include m.tablet {
+        font-size: 3.6rem;
+    }
 }
 h3 {
     font-size: 2.8rem;
@@ -47,7 +56,7 @@ ul {
     list-style: none;
 }
 .container {
-    width: 95%;
-    max-width: 1200px;
+    width: 92%;
+    max-width: 130rem;
     margin: 0 auto;
 }

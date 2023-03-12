@@ -3,11 +3,6 @@
 
 .benefits {
     @include m.bgImage('', v.$primary-color);
-    padding: 5rem 0;
-
-    @include m.tablet {
-        padding: 6rem 0;
-    }
 
     &__grid {
         @include m.tablet {
@@ -21,16 +16,11 @@
     }
 
     &__heading {
-        margin-bottom: 3rem;
-
+        margin-top: 0;
         @include m.tablet {
-            margin: 5rem 0 3rem;
+            margin-top: 5rem;
         }
-
         color: v.$secondary-color;
-        display: inline-block;
-        font-size: 3.6rem;
-
         @include m.underline(v.$light-color);
     }
 

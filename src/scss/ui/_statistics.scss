@@ -2,23 +2,12 @@
 @use 'base/mixins' as m;
 
 .statistics {
-    padding: 5rem 0;
-
-    @include m.desktop {
-        padding: 8rem 0;
-    }
-
     &__heading {
-        margin-bottom: 3rem;
-
+        margin-top: 0;
         @include m.tablet {
-            margin: 5rem 0 3rem;
+            margin-top: 5rem;
         }
-
         color: v.$secondary-color;
-        display: inline-block;
-        font-size: 3.6rem;
-
         @include m.underline(v.$primary-color);
     }
 

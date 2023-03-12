@@ -62,6 +62,13 @@
     background-size: cover;
 }
 
+@mixin bgIcon($url) {
+    background-image: url($url);
+    background-size: 10rem;
+    background-repeat: no-repeat;
+    background-position: 50% 4rem;
+}
+
 @mixin underline($bg-color) {
     &::after {
         content: '';

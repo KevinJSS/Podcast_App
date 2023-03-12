@@ -2,12 +2,6 @@
 @use 'base/mixins' as m;
 
 .about {
-    padding: 5rem 0;
-
-    @include m.tablet {
-        padding: 8rem 0;
-    }
-
     &__grid {
         @include m.tablet {
             @include m.grid(2, 2rem);
@@ -16,11 +10,7 @@
     }
 
     &__heading {
-        margin: 5rem 0 3rem;
         color: v.$secondary-color;
-        display: inline-block;
-        font-size: 3.6rem;
-
         @include m.underline(v.$primary-color);
     }
 }
