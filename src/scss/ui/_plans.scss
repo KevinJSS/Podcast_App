@@ -6,9 +6,6 @@
 
     &__heading {
         margin-top: 0;
-        @include m.tablet {
-            margin-top: 5rem;
-        }
         color: v.$light-color;
         @include m.underline(v.$primary-color);
     }
