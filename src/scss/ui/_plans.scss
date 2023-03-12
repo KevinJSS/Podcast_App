@@ -44,7 +44,7 @@
     align-items: center;
     gap: 2rem;
     
-    padding: 20rem 22% 8rem;
+    padding: 15rem 22% 8rem;
 
     @include m.tablet {
         flex-grow: 1;
@@ -58,6 +58,7 @@
     border-bottom: 1px solid #dddddd;
 
     @include m.tablet {
+        border: none;
         transition: transform .3s ease-in-out;
         -webkit-transition: transform .3s ease-in-out;
         -moz-transition: transform .3s ease-in-out;
@@ -122,14 +123,15 @@
         
         @include m.tablet {
             order: 0;
+            z-index: 100;
             margin: -6rem 0;
-            position: relative;
             border-radius: 2rem;
             -webkit-border-radius: 2rem;
             -moz-border-radius: 2rem;
             -ms-border-radius: 2rem;
             -o-border-radius: 2rem;
             background-position: 50% 7rem;
+            background-size: 14rem;
             padding-top: calc(20rem + 5rem);
         }
     }
