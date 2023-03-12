@@ -24,6 +24,10 @@ p {
 }
 a {
     text-decoration: none;
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 img {
     max-width: 100%;
