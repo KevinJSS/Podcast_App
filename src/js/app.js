@@ -1,7 +1,7 @@
 const scrollDownBtn = document.querySelector("#scroll-down-button");
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 0) {
+  if (window.scrollY > 50) {
     scrollDownBtn.style.display = "none";
   } else {
     scrollDownBtn.style.display = "block";
