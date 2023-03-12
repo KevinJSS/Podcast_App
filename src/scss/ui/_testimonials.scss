@@ -3,7 +3,7 @@
 
 .testimonials {
     &__grid {
-        @include m.tablet {
+        @include m.desktop {
             @include m.grid(5, 4rem);
             align-items: center
         }
@@ -19,6 +19,11 @@
         margin: 0 auto;
 
         @include m.tablet {
+            max-width: 60%;
+        }
+
+        @include m.desktop {
+            max-width: 90%;
             grid-column: 1 / 3;
 
             transition: transform .3s ease-in-out;
@@ -44,7 +49,7 @@
     &__content {
         margin-top: 7rem;
 
-        @include m.tablet {
+        @include m.desktop {
             margin-top: 0;
             grid-column: 3 / 6;
         }
