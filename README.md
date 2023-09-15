@@ -67,8 +67,7 @@ gulp
 
 ## DEVELOPERS
 * Kevin Alvarado
-* <a href="https://github.com/codigoconjuan">Juan Pablo de la Torre's</a> "CSS The Complete Guide" course.
-
+  
 <hr/>
 
 <div align="center">
